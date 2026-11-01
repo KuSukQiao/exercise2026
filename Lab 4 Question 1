@@ -1,0 +1,13 @@
+	Scanner input = new Scanner(System.in);
+	
+	System.out.print("Enter an integer: ");
+	int number = input.nextInt();
+	
+	System.out.print("The factors are: ");
+	
+	for (int factor = 1; factor <= number; factor++) {
+		int remainder = number % factor;
+		if (remainder ==0) {
+			System.out.print(factor + ", ");
+		}
+	}
