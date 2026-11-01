@@ -1,0 +1,15 @@
+	Scanner input = new Scanner(System.in);
+	
+	System.out.print("Enter an integer: ");
+	int number = input.nextInt();
+	
+	int sum = 0;
+	int current = 1;
+	int previous = 1;
+	
+	while (current <= number) {
+		previous += current;
+		sum+= previous;
+		current++;
+	}
+	System.out.println("Sum of the series: " + sum);
